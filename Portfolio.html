@@ -9,10 +9,11 @@
         
         <!--=============== REMIX ICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-        <!--=============== CSS ===============-->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/css/styles.css">
 
+    
         <title>Ruben Sousa - Game Developer</title>
     </head>
     <body>
@@ -46,16 +47,6 @@
                         </a>
                     </ul>
                 </div>
-
-                <div class="profile__info grid">
-                    <div class="profile__info-group">
-                        <h3 class="profile__info-number">7</h3>
-                        <p class="profile__info-description">
-                            
-                        </p>
-                    </div>
-                    
-                </div>
             </div>
         </header>
 
@@ -68,94 +59,176 @@
                         Projects
                     </button>
                 </ul>
-
+                <!--Receitas da Abuela-->
+                
                 <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/project1.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Unity 2D</span>
-                                    <h3 class="projects__title">Mars Blitz</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                    </div>
-                                    <legend>itch io</legend>
-                            </div>
-                        
-                        </article>
-                        <legend>1</legend>
-                        <article class="projects__card">
-                            <img src="assets/img/project2.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Web</span>
-                                    <h3 class="projects__title">Portfolio website</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                         <div class="col-md-6">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="assets/img/project1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project3.jpg" class="d-block w-100" alt="...">
+                                  </div>
                                 </div>
-                            </div>
-                        </article>
-                        <legend>2</legend>
-                        <article class="projects__card">
-                            <img src="assets/img/project3.jpg" alt="" class="projects__img">
+                              </div>
+                        </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h4 class="card-title">Grandma´s Recipes (Unreal Engine)</h4>
+                              <p class="card-subtitle mb-2"> Take care of your grandma's old bakery and explore Bombarral.</p>
+                              <h5 class="card-subtitle">Contributions</h5>
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Movil</span>
-                                    <h3 class="projects__title">Fast food app</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <legend>3</legend>
-                        <article class="projects__card">
-                            <img src="assets/img/project4.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Movil</span>
-                                    <h3 class="projects__title">Travel app</h3>
-                                    <a href="#" class="projects__button button button__small">
-                                        <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <legend>4</legend>
-
-                        <article class="projects__card">
-                            <img src="assets/img/project5.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Design</span>
-                                    <h3 class="projects__title">Music app design</h3>
-                                    
-                                    
-                                </div>
-                            </div>
+                              <p class="card-text mb-1">Implemented UI and Gameplay.</p>
+                              <p class="card-text mb-1">Player Mechanic.</p>
+                              <p class="card-text mb-1">Cooking Mechanic.</p>
                             
-                        </article>
-                        <legend>5</legend>
+                              <h5 class="card-subtitle mb-2 mt-2">Project Details</h5>
+
+                              <p class="card-text mb-1">Playstation Talents Portugal Finalist 2022.</p>
+                              <p class="card-text mb-1">Created in Unreal 4 with Blueprints.</p>
+                              <p class="card-text mb-1">Duration from February 2022 to August 2022.</p>
+                            
+                            <a href="https://butter-games-studio.itch.io/grandmas-recipe" target="_blank" class="mb-0 text-muted">Demo version</a>
+                            
+                            </div>
+                          </div>
+                        </div>
+                    </div>   
+                    
+                    <!-- Mars Blitz-->
+                    <div class="card mb-3 ">
+                        <div class="row g-0">
+                         <div class="col-md-6">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="assets/img/project1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h4 class="card-title">Mars Blitz (Unity 2D)</h4>
+                              <p class="card-subtitle mb-2">Rescue your crewmates while fighting aliens from Mars!.</p>
+                              <h5 class="card-subtitle">Contributions</h5>
+                              <p class="card-text mb-1">Third-Person Shooter</p>
+                              <p class="card-text mb-1">Shooting Mechanic.</p>
+                              <p class="card-text mb-1">Inventory and Dialog System.</p>
+                              <p class="card-text mb-1">In-Game Sound.</p>
+                              <p class="card-text mb-1">Custom Camara System.</p>
+                            
+                              <h5 class="card-subtitle mb-2 mt-2">Project Details</h5>
+
+                              <p class="card-text mb-1">Created in Unity 2D using C#</p>
+                              <p class="card-text mb-1">Duration from March 2021 to August 2021</p>
+                            
+                            <a href="https://butter-games-studio.itch.io/mars-blitz" class="mb-0 text-muted" target="_blank">Demo version</a>
+                            <a href="https://github.com/rubenp29/MarsBlitz" class="mb-0 text-muted" target="_blank">Source Code</a>
+                            
+                            </div>
+                          </div>
+                        </div>
                     </div>
+                    <!--CPP Portal-->
+                    <div class="card mb-3 ">
+                        <div class="row g-0">
+                         <div class="col-md-6">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="assets/img/project1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h4 class="card-title">Portal 2 - Portals (Unreal Engine)</h4>
+                              <p class="card-subtitle mb-2">Reverse Engineering.</p>
+                              <h5 class="card-subtitle">Contributions</h5>
+                              <p class="card-text mb-1">Portal Travelling.</p>
+                              <p class="card-text mb-1">Core Gameplay.</p>
+                              <p class="card-text mb-1">FPS Character Controller.</p>
+                            
+                              <h5 class="card-subtitle mb-2 mt-2">Project Details</h5>
 
+                              <p class="card-text mb-1">Created in Unreal Engine 4 using C++</p>
+                            
+                            <a href="https://github.com/rubenp29/Portal-Mechanic" target="_blank" class="mb-0 text-muted">Source Code</a>
+                            
+                            </div>
+                          </div>
+                        </div>
+                    </div>        
+                                
+                    <!--The Adventure of Artur-->
+                    <div class="card mb-3 ">
+                        <div class="row g-0">
+                         <div class="col-md-6">
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="assets/img/project1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="assets/img/project3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                          <div class="col-md-6">
+                            <div class="card-body">
+                              <h4 class="card-title">The Adventures of Artur (Godot Engine)</h4>
+                              <h4 class="card-subtitle mb-2">Simple 2D SideScroller Shooter</h4>
+
+                              <h5 class="card-subtitle mb-2">Contributions</h5>
+                              <p class="card-text mb-1">Portal Travelling.</p>
+                              <p class="card-text mb-2">Core Gameplay.</p>
+                              <p class="card-text mb-1">FPS Character Controller.</p>
+                            
+                              <h5 class="card-subtitle mb-2 mt-2">Project Details</h5>
+
+                              <p class="card-text mb-1">Created in Godot Engine using GDScript</p>
+                            
+                            <a href="https://github.com/rubenp29/TheAdventureofArtur" target="_blank" class="mb-0 text-muted">Source Code</a>
+                            
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
+                
+                
             </section>
+            
         </main>
-
+        
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
-            <span class="footer__copy">
-                &#169; 
+            <span class="footer__copy"> 
             </span>
         </footer>
 
@@ -164,5 +237,7 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
     </body>
 </html>

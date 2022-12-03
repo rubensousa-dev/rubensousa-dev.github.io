@@ -547,3 +547,18 @@ body.dark-theme {
     margin: 4.5rem 0 2.5rem;
   }
 }
+
+
+/*Card Part*/
+
+.card-title{
+  font-size: 20px;
+}
+
+.card-subtitle{
+  font-size: 14px;  
+}
+
+.card-text{
+  font-size: 12px;
+}
