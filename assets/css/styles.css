@@ -43,7 +43,9 @@
     --smaller-font-size: .813rem;
   }
 }
-
+.centerinfodiv{
+  text-align: center;
+}
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -79,7 +81,7 @@ img {
 
 /*=============== THEME ===============*/
 .change-theme {
-  position: absolute;
+ float: right;
   top: 1.5rem;
   right: 0;
   font-size: 1.25rem;
@@ -88,7 +90,20 @@ img {
   transition: .3s;
 }
 
+.back-button{
+  float: left;
+  top: 0.5rem;
+  right: 0;
+  font-size: 1.25rem;
+  color: var(--title-color);
+  cursor: pointer;
+  transition: .3s;
+}
+
 .change-theme:hover {
+  color: var(--first-color);
+}
+.back-button:hover {
   color: var(--first-color);
 }
 
