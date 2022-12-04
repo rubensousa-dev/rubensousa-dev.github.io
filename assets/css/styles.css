@@ -45,6 +45,7 @@
 }
 .centerinfodiv{
   text-align: center;
+  transition: .3s;
 }
 /*=============== BASE ===============*/
 * {
