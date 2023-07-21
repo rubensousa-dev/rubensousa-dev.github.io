@@ -1,223 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--=============== FAVICON ===============-->
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Rúben Sousa - Gameplay Developer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
         <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <title>Ruben Sousa - Gameplay Developer</title>
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <!--<i class="ri-moon-line change-theme" id="theme-button"></i>-->
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <img src="assets/img/perfil.png" alt="">
-                        </div>
-                    </div>
-                    <h2 class="profile__name">Rúben Sousa</h2>
-                    <h3 class="profile__profession">Gameplay Developer</h3>
-                    <ul class="profile__social">
-                        <a href="https://linkedin.com/in/ruben-sousa-dev" target="_blank" class="profile__social-link">
-                        <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/rubensousa-dev" target="_blank" class="profile__social-link">
-                        <i class="ri-github-line"></i>
-                        </a>                        
-                        <a href="mailto:rubenpereira.dev@gmail.com" target="_blank" class="profile__social-link">
-                        <i class="ri-mail-line"></i>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-12  centerinfodiv">
-                    <p class="justify-content-center ">
-                        Gameplay Programmer proficient in using middleware game
-                        engines, <br> such as Unity 3D and Unreal, creating code in C# and
-                        Blueprints.
-                    </p>
-                </div>
-                <div class="profile__buttons">
-                    <!-- Insert your CV-->
-                    <a href="Resume.html" class="button">
-                    Resume 
-                    </a> 
-                </div>
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Portfolio</span></a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= flex-column  d-flex justify-content-center-->
+  <section id="hero" class="d-flex justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <div class="profile ">
+        <div class="profile__container">
+          <div class="profile__data">
+            <div class="profile__border">
+              <div class="profile__perfil">
+                <img src="assets/img/profile-img.png" alt="profile photo">
+              </div>
             </div>
-        </header>
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects">
-                    Projects
-                    </button>
-                    <button class="filters__button" data-target="#skills">
-                    Skills
-                    </button>
-                </ul>
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/GrandmasRecipes/Thumbnail.png" alt="" class="projects__img">
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Unreal Engine</span>
-                                    <h3 class="projects__title">Grandma´s Recipes</h3>
-                                    <a href="Portfolio.html" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="projects__card">
-                            <img src="assets/img/MarsBlitz/Thumbnail.png" alt="" class="projects__img">
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Unity 2D</span>
-                                    <h3 class="projects__title">Mars Blitz</h3>
-                                    <a href="Portfolio.html" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="projects__card">
-                            <img src="assets/img/Portal/Thumbnail.png" alt="" class="projects__img">
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Unreal Engine/ C++</span>
-                                    <h3 class="projects__title">Portal 2 - Portals</h3>
-                                    <a href="Portfolio.html" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="projects__card">
-                            <img src="assets/img/TheAdventureOfArthur/Menu.gif" alt="" class="projects__img">
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle">Godot Engine</span>
-                                    <h3 class="projects__title">The Adventure of Artur</h3>
-                                    <a href="Portfolio.html" class="projects__button button button__small">
-                                    <i class="ri-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title">Frontend Developement</h3>
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">HTML 5</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">CSS 3</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">JavaScript</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">Arduino</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__area">
-                            <h3 class="skills__title">Game Developement</h3>
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">Unreal Engine 4</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">Unity</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">C#</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">Blueprints</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">C++ <br>(in progress)</h3>
-                                        </div>
-                                    </div>
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-                                        <div>
-                                            <h3 class="skills__name">Git</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <h2>Rúben Sousa</h1>
+        <p>I'm <span class="typed" data-typed-items="Gameplay Developer, Web Developer"></span></p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/ruben-sousa-dev" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/rubensousa-dev" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+          <a href="mailto:rubenpereira.dev@gmail.com" target="_blank" class="mail"><i class="bx bxs-envelope"></i></a>
+        </div>
+      </div>   
+    </div>
+  </section>
+  
+  <!-- End Hero -->
+
+<!--=============== HEADER ===============-->
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About</h2>
+          <p> <b>Gameplay Programmer</b> proficient in using middleware game engines,
+           <br> such as <b>Unity 3D</b> and <b>Unreal</b>, creating code in <b>C#</b> and <b>Blueprints</b>.
+         <br> Used to working with indie teams with time management and tight deadlines.</p>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="row skills-content">
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title mb-3"> Game Development</h3>
+            <div class="progress ">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <p class="skill">Unreal Engine</span>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">C++</span>
+              </div>
+            </div>  
+
+            <div class="progress">  
+               <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">Blueprints</span>
+              </div>
+            </div>  
+         
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">Unity</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">C#</span>
+              </div>
+            </div>
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">Photon Quantum</span>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <h3 class="resume-title mt-2 mb-3"> Web Development</h3>
+
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">HTML 5</span>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'></i>
+                <span class="skill">CSS 5</span>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'> </i>
+                <span class="skill">Bootstrap</span>
+              </div>
+            </div>
+
+            <div class="progress">
+              <div class=" d-flex text-center">
+                <i class='bx bx-check-circle circleMark'></i>
+                <span class="skill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+      <div class="section-title">
+          <h2>Resume</h2>
+      </div>
+      <div class="row">
+          <div class="col-lg-6">
+              <h3 class="resume-title">Skills & Abilities</h3>
+              <div class="resume-item pb-0">
+                  <ul>
+                      <li><em>Profecient using <b>C#</b> and <b>OOP</b> languages.</em></li>
+                      <li><em>Comfortable working independently and in team setting.</em></li>
+                      <li><em>Good communication skills.</em></li>
+                      <li><em>2+ Years of experience working with video games.</em></li>
+                  </ul>
+              </div>
+              <h3 class="resume-title">Experience</h3>
+              <!-- ======= Redcatpig ======= -->
+              <div class="resume-item">
+                  <h4>Gameplay Developer Intern, Redcatpig Studio.</h4>
+                  <h5>February 2023 - June 2023</h5>
+                  <ul>
+                      <li>Developed and contributed to <b>KEO</b>, a <b>multiplayer vehicle combat game</b>, focusing on Gameplay, UI programming and various complex systems.</li>
+                      <li>Practical expertise in <b>ECS Quantum Engine & scripting API</b>, using <b> unsafe C# environments</b>, adept problem solver in diverse programming environments.</li>
+                      <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                      <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                  </ul>
+              </div>
+              <!-- ======= Butter Games ======= -->
+              <div class="resume-item">
+                  <h4>Gameplay Programmer, Butter Games Studios.</h4>
+                  <h5>February 2021 - March 2023</h5>
+                  <ul>
+                      <li>Implementing diverse game mechanics, animations, and UI elements.</li>
+                      <li>Developing character control systems to ensure smooth and responsive player interactions.</li>
+                      <li>Participating in design discussions and offering valuable insights to enhance the overall player experience.</li>
+                      <li>Providing support and assistance to fellow team members, fostering a collaborative and productive work environment.</li>
+                  </ul>
+              </div>
+              <!-- ======= Auto M Caldas ======= -->
+              <div class="resume-item">
+                  <h4>Content Management, AutoMCaldas.</h4>
+                  <h5>January 2018 - August 2020</h5>
+                  <ul>
+                      <li>Captured high-quality photographs of automotive subjects</li>
+                      <li>Assumed responsibility for website maintenance and updates.</li>
+                      <li>Managed and maintained advertisements.</li>
+                      <li>Provided graphic design services for various projects.</li>
+                  </ul>
+              </div>
+              <!-- ======= BitCliq ======= -->
+              <div class="resume-item">
+                  <h4>Front-End Developer & Web Designer Intern, BITCLIQ.</h4>
+                  <h5>February 2023 - June 2023</h5>
+                  <ul>
+                      <li>Implemented front-end solutions using HTML, CSS, and JavaScript.</li>
+                      <li>Created responsive and interactive web applications.</li>
+                      <li>Ensured seamless navigation and optimal user experience.</li>
+                      <li>Designed custom icons, enhancing visual elements of projects.</li>
+                      <li>Created eye-catching flyers and mupis for effective marketing campaigns.</li>
+                  </ul>
+              </div>
+          </div>
+          <!--------------School------------------>
+          <div class="col-lg-6">
+              <h3 class="resume-title mt-3">Education</h3>
+              <div class="resume-item">
+                  <h4>Bachelor's degree in Games and Multimedia</h4>
+                  <h5>2020 - 2023</h5>
+                  <p><em>ESTG - Instituto Politécnico de Leiria - Leiria Portugal </em></p>
+              </div>
+              <div class="resume-item">
+                  <h4>Tesp Design for Digital Media </h4>
+                  <h5>2018 - 2020</h5>
+                  <p><em>ESAD - Instituto Politécnico de Leiria - Leiria Portugal</em></p>
+              </div>
+
+           <!--------------Other Accomplishments------------------>
+              <h3 class="resume-title mt-3">Other Accomplishments</h3>
+              <div class="resume-item">
+                <ul>
+                  
+                  <li class="mb-1">PlayStation&#174; Awards 2022 Winner- Best Art</li>
+                  <li class="mb-1">PlayStation&#174; Awards 2022 Winner- Best Kids Game</li>
+                  <li class="mb-1">2022 PlayStation&#174; Talents Award Finalist.</li>
+                  <li class="mb-1">More than 15 articles written for the video games I have developed.</li>
+                  <li class="mb-1">Featured on Itch.io’s and Indie DB’s front page.</li>
+                  <li class="mb-1">Ambassador of the Voodoo Academy program.</li>
+                  <li class="mb-1">Best school project developed in Arduino consisting in a vending machine adapted for people with visual impairment.</li>
+              </ul>
+              </div>
+          </div>
+
+          <!-- Afinar o botão -->
+          <div class="col-12 d-flex justify-content-center align-items-center mt-5">
+              <button type="button" class="btn btn-primary">
+                <a download="" href="assets/pdf/RubenSousaCV.pdf"> 
+                  <span class="text-white">Download CV</span>
+                  <i class='bx bxs-download text-white'></i>
+                </a>
+              </button>
+           </div>
+      </div>
+  </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-unreal">Unreal Engine</li>
+              <li data-filter=".filter-unity">Unity</li>
+              <li data-filter=".filter-quantum">Quantum</li>
+              <li data-filter=".filter-godot">Godot</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+          <!--Redcatpig-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-unity filter-quantum">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/KEO/KEO.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>KEO</h4>
+                <p>Redcatpig</p>
+                <div class="portfolio-links">
+                  <a href="https://store.steampowered.com/app/1424910/KEO/" target="_blank" title="KEO"><i class='bx bxl-steam'></i></a>
+                  <a href="portfolio-details-KEO.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details KEO"><i class="bx bx-link"></i></a>
                 </div>
-            </section>
-        </main>
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy">
-            &#169; Rúben Sousa. All rigths reserved
-            <br>
-            rubenpereira.dev@gmail.com
-            </span>
-        </footer>
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+              </div>
+            </div>
+          </div>
+          <!--Receitas da Avo-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-unreal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/GrandmasRecipes/Thumbnail.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Grandma´s Recipes</h4>
+                <p>Butter Games Studios</p>
+                <div class="portfolio-links">
+                  <a href="https://butter-games-studio.itch.io/grandmas-recipe" target="_blank" title="GrandmasRecipes"><i class="fa-brands fa-itch-io"></i></i></a>
+                  <a href="portfolio-details-Receitas.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- c++ portal-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-unreal">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/Portal/Thumbnail.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Portal 2 - Portals</h4>
+                <div class="portfolio-links">
+                  <a href="https://github.com/rubensousa-dev/Portal-Mechanic" target="_blank" title="Portal"><i class='bx bxl-github'></i></a>
+                  <a href="portfolio-details-Portal.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details Portal"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Mars Blitz-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-unity">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/MarsBlitz/Thumbnail.png" class="img-fluid " alt="">
+              <div class="portfolio-info">
+                <h4>Mars Blitz</h4>
+                <p>Butter Games Studios</p>
+                <div class="portfolio-links">
+                  <a href="https://butter-games-studio.itch.io/mars-blitz" target="_blank" title="MarsBlitz"><i class="fa-brands fa-itch-io"></i></a>
+                  <a href="https://github.com/rubensousa-dev/MarsBlitz" target="_blank" title="MarsBlitz"><i class='bx bxl-github'></i></a>
+                  <a href="portfolio-details-Mars.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details Mars"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--Rabbit-->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-godot">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/TheAdventureOfArthur/Shooting.gif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>The Adventure of Artur</h4>
+                <div class="portfolio-links">
+                  <a href="https://github.com/rubensousa-dev/TheAdventureofArtur" target="_blank" title="Rabbit"><i class='bx bxl-github'></i></a>
+                  <a href="portfolio-details-Godot.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details Rabbit"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h2>Rúben Sousa</h2>
+      <p>rubenpereira.dev@gmail.com</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/ruben-sousa-dev" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/rubensousa-dev" target="_blank"  class="github"><i class="bx bxl-github"></i></a>
+        <a href="mailto:rubenpereira.dev@gmail.com" target="_blank" class="mail"><i class="bx bxs-envelope"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Rúben Sousa</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
