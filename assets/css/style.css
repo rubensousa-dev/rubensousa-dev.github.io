@@ -563,6 +563,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -609,7 +610,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   position: absolute;
   left: 30px;
   right: 30px;
@@ -777,6 +778,12 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
 }
+.myContributions{
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
 
 .portfolio-details .portfolio-description p {
   padding: 0;
