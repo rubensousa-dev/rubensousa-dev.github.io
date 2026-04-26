@@ -253,7 +253,7 @@
                 <h4>Software Developer – Huawei Ecosystem, Freelance.</h4>
                 <h5>January 2025 - Present</h5>
                 <ul>
-                  <li>Collaborating with <a href="https://infinitygames.io/" target="_blank"><b>Infinity Games</b></a> to adapt and redevelop games for <b>Huawei’s wearable ecosystem</b>, with a focus on the <b>Huawei Watch 5</b>.</li>
+                  <li>Collaborating with <a href="https://infinitygames.io/" target="_blank" id="site"><b>Infinity Games</b></a> to adapt and redevelop games for <b>Huawei’s wearable ecosystem</b>, with a focus on the <b>Huawei Watch 5</b>.</li>
                   <li>Successfully ported <b>Infinity Loop Lite</b> to next-gen smartwatches, ensuring compatibility with <b>circular displays</b>, <b>limited input methods</b>, and <b>hardware-specific constraints</b>.</li>
                   <li>Rebuilding the original <b>Infinity Loop</b> using <b>ArkTS</b> on <b>HarmonyOS</b>, leveraging modern APIs and architecture for <b>long-term maintainability</b> and <b>optimal performance</b>.</li>
                   <li>End-to-end ownership – from <b>technical analysis</b> and <b>architecture planning</b> to <b>implementation</b>, <b>optimization</b>, <b>testing</b>, and <b>delivery</b> of production-ready builds.</li>
@@ -515,15 +515,24 @@
   <script>
     const dmToggle = document.getElementById('darkmode-toggle');
     const dmIcon = dmToggle.querySelector('i');
+    const osDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      document.body.classList.add('dark-mode');
-      dmIcon.className = 'bi bi-sun-fill';
+    function applyTheme(dark) {
+      document.body.classList.toggle('dark-mode', dark);
+      dmIcon.className = dark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
     }
 
+    const saved = localStorage.getItem('darkMode');
+    if (saved === 'enabled') applyTheme(true);
+    else if (saved === 'disabled') applyTheme(false);
+    else applyTheme(osDark.matches);
+
+    osDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('darkMode')) applyTheme(e.matches);
+    });
+
     dmToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
+      const isDark = document.body.classList.toggle('dark-mode');
       dmIcon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
       localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     });

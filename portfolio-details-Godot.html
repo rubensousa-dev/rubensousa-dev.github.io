@@ -114,13 +114,24 @@
   <script>
     const dmToggle = document.getElementById('darkmode-toggle');
     const dmIcon = dmToggle.querySelector('i');
-    if (localStorage.getItem('darkMode') === 'enabled') {
-      document.body.classList.add('dark-mode');
-      dmIcon.className = 'bi bi-sun-fill';
+    const osDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applyTheme(dark) {
+      document.body.classList.toggle('dark-mode', dark);
+      dmIcon.className = dark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
     }
+
+    const saved = localStorage.getItem('darkMode');
+    if (saved === 'enabled') applyTheme(true);
+    else if (saved === 'disabled') applyTheme(false);
+    else applyTheme(osDark.matches);
+
+    osDark.addEventListener('change', (e) => {
+      if (!localStorage.getItem('darkMode')) applyTheme(e.matches);
+    });
+
     dmToggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
+      const isDark = document.body.classList.toggle('dark-mode');
       dmIcon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
       localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
     });
