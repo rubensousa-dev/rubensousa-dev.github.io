@@ -89,6 +89,9 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <button id="darkmode-toggle" class="darkmode-toggle" title="Toggle dark mode">
+    <i class="bi bi-moon-stars-fill"></i>
+  </button>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -103,6 +106,21 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const dmToggle = document.getElementById('darkmode-toggle');
+    const dmIcon = dmToggle.querySelector('i');
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      document.body.classList.add('dark-mode');
+      dmIcon.className = 'bi bi-sun-fill';
+    }
+    dmToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      dmIcon.className = isDark ? 'bi bi-sun-fill' : 'bi bi-moon-stars-fill';
+      localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    });
+  </script>
 
 </body>
 
