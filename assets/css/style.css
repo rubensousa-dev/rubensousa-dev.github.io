@@ -875,3 +875,180 @@ section {
 .iconsDetails:hover{
   color: #42A5F5 !important;
 }
+
+/*--------------------------------------------------------------
+# Dark Mode Toggle Button
+--------------------------------------------------------------*/
+.darkmode-toggle {
+  position: fixed;
+  right: 15px;
+  bottom: 65px;
+  z-index: 996;
+  background: #42A5F5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+}
+
+.darkmode-toggle i {
+  font-size: 18px;
+  color: #fff;
+  line-height: 0;
+}
+
+.darkmode-toggle:hover {
+  background: #0678e3;
+}
+
+/*--------------------------------------------------------------
+# Dark Mode
+--------------------------------------------------------------*/
+body.dark-mode {
+  background-color: #13131f;
+  color: #d0d0d0;
+}
+
+body.dark-mode a {
+  color: #64b5f6;
+}
+
+body.dark-mode a:hover {
+  color: #42A5F5;
+}
+
+/* Preloader */
+body.dark-mode #preloader {
+  background: #13131f;
+}
+
+/* Header / Nav */
+body.dark-mode #header {
+  background: #1a1a2e;
+  border-right-color: #2a2a3e;
+}
+
+body.dark-mode .nav-menu a,
+body.dark-mode .nav-menu a:focus {
+  color: #d0d0d0;
+  background: #23233a;
+}
+
+body.dark-mode .nav-menu a span,
+body.dark-mode .nav-menu a:focus span {
+  color: #d0d0d0;
+}
+
+body.dark-mode .mobile-nav-toggle i {
+  color: #d0d0d0;
+}
+
+/* Hero */
+body.dark-mode #hero {
+  background-color: #13131f;
+}
+
+body.dark-mode #hero:before {
+  background: rgba(19, 19, 31, 0.85);
+}
+
+body.dark-mode #hero h1,
+body.dark-mode #hero p {
+  color: #d0d0d0;
+}
+
+body.dark-mode #hero .social-links a {
+  color: #d0d0d0;
+}
+
+/* Sections */
+body.dark-mode .section-bg {
+  background-color: #1a1a2e;
+}
+
+body.dark-mode .section-title h2 {
+  color: #d0d0d0;
+}
+
+body.dark-mode .section-title h2::before {
+  background: #2e2e4a;
+}
+
+body.dark-mode .section-title p {
+  color: #aaa;
+}
+
+/* Skills */
+body.dark-mode .skills .progress .skill {
+  color: #d0d0d0;
+}
+
+/* Resume */
+body.dark-mode .resume .resume-title {
+  color: #d0d0d0;
+}
+
+body.dark-mode .resume .resume-item h4 {
+  color: #90bde0;
+}
+
+body.dark-mode .resume .resume-item h5 {
+  background: #23233a;
+  color: #d0d0d0;
+}
+
+body.dark-mode .resume .resume-item::before {
+  background: #13131f;
+}
+
+body.dark-mode .resume .resume-item ul li,
+body.dark-mode .resume .resume-item p,
+body.dark-mode .resume .resume-item em {
+  color: #aaaaaa;
+}
+
+/* Portfolio */
+body.dark-mode .portfolio #portfolio-flters {
+  background: #1a1a2e;
+}
+
+body.dark-mode .portfolio #portfolio-flters li {
+  color: #d0d0d0;
+}
+
+body.dark-mode .portfolio .portfolio-wrap::before {
+  background: rgba(13, 13, 30, 0.92);
+}
+
+body.dark-mode .portfolio .portfolio-wrap .portfolio-info h4,
+body.dark-mode .portfolio .portfolio-wrap .portfolio-info p,
+body.dark-mode .portfolio .portfolio-wrap .portfolio-links a {
+  color: #d0d0d0;
+}
+
+/* Footer */
+body.dark-mode #footer {
+  background: #0d0d1a;
+  color: #d0d0d0;
+}
+
+/* Bold text highlight */
+body.dark-mode b {
+  color: #42A5F5;
+}
+
+/* Download CV button */
+body.dark-mode .btn-primary {
+  background-color: #2a5a8a;
+  border-color: #2a5a8a;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #1e4a7a;
+  border-color: #1e4a7a;
+}
