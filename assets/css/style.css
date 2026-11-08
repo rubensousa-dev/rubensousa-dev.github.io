@@ -345,24 +345,27 @@ h6 {
   color: #ffffff;
 }
 
-.hero-cv-btn {
+.cv-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 28px;
   padding: 10px 28px;
   font-size: 17px;
   border-radius: 50px;
   box-shadow: 0 6px 18px rgba(5, 99, 187, 0.3);
 }
 
-.hero-cv-btn:hover {
+.cv-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(5, 99, 187, 0.4);
 }
 
-.hero-cv-btn i {
+.cv-btn i {
   font-size: 20px;
+}
+
+.hero-cv-btn {
+  margin-top: 28px;
 }
 
 @media (max-width: 992px) {
