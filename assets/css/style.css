@@ -4,7 +4,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #272829;
-  background-color: #edebeb45;
+  background-color: #fafafa;
 }
 
 a {
@@ -326,6 +326,43 @@ h6 {
 
 #hero .social-links a:hover {
   color: #0563bb;
+}
+
+/* Download CV buttons (hero + resume section) */
+.btn-primary {
+  background-color: #0563bb;
+  border-color: #0563bb;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: #044a93;
+  border-color: #044a93;
+  color: #ffffff;
+}
+
+.hero-cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 10px 28px;
+  font-size: 17px;
+  border-radius: 50px;
+  box-shadow: 0 6px 18px rgba(5, 99, 187, 0.3);
+}
+
+.hero-cv-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(5, 99, 187, 0.4);
+}
+
+.hero-cv-btn i {
+  font-size: 20px;
 }
 
 @media (max-width: 992px) {
@@ -915,6 +952,45 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Soft Light Mode — warm cream / greige surfaces (dark mode untouched)
+--------------------------------------------------------------*/
+body:not(.dark-mode) {
+  background-color: #f6f4ef;
+  color: #3b3f44;
+}
+
+body:not(.dark-mode) #hero {
+  background-color: #f1eee8;
+}
+
+body:not(.dark-mode) #hero:before {
+  background: rgba(246, 244, 239, 0.6);
+}
+
+body:not(.dark-mode) .section-bg {
+  background-color: #eeeae3;
+}
+
+body:not(.dark-mode) #header,
+body:not(.dark-mode) #preloader,
+body:not(.dark-mode) .portfolio #portfolio-flters,
+body:not(.dark-mode) .resume .resume-item::before {
+  background: #faf8f4;
+}
+
+body:not(.dark-mode) .nav-menu a:not(.active):not(:hover) {
+  background: #e9e5dd;
+}
+
+body:not(.dark-mode) .resume .resume-item h5 {
+  background: #e9e5dd;
+}
+
+body:not(.dark-mode) #footer {
+  background: #eeeae3;
+}
+
+/*--------------------------------------------------------------
 # Dark Mode — Monochromatic Minimalism
 # Background: #121212 | Primary text: #E0E0E0 | Secondary text: #B0B0B0
 # Borders: #444444 | Subtle: #888888
@@ -1059,11 +1135,14 @@ body.dark-mode a b {
 
 /* Download CV button */
 body.dark-mode .btn-primary {
-  background-color: #888888;
-  border-color: #888888;
+  background-color: #42a5f5;
+  border-color: #42a5f5;
+  color: #0d1117;
 }
 
-body.dark-mode .btn-primary:hover {
-  background-color: #666666;
-  border-color: #666666;
+body.dark-mode .btn-primary:hover,
+body.dark-mode .btn-primary:focus-visible {
+  background-color: #90caf9;
+  border-color: #90caf9;
+  color: #0d1117;
 }
