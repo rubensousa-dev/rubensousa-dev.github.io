@@ -129,7 +129,7 @@ h6 {
   }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   #main {
     margin-left: 100px;
   }
@@ -273,7 +273,7 @@ h6 {
 
 @media (min-width: 992px) {
   #hero {
-    padding-left: 160px;
+    padding-left: 100px;
   }
 }
 
@@ -955,7 +955,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Soft Light Mode — warm cream / greige surfaces (dark mode untouched)
+# Soft Light Mode - warm cream / greige surfaces (dark mode untouched)
 --------------------------------------------------------------*/
 body:not(.dark-mode) {
   background-color: #f6f4ef;
@@ -974,7 +974,6 @@ body:not(.dark-mode) .section-bg {
   background-color: #eeeae3;
 }
 
-body:not(.dark-mode) #header,
 body:not(.dark-mode) #preloader,
 body:not(.dark-mode) .portfolio #portfolio-flters,
 body:not(.dark-mode) .resume .resume-item::before {
@@ -994,7 +993,7 @@ body:not(.dark-mode) #footer {
 }
 
 /*--------------------------------------------------------------
-# Dark Mode — Monochromatic Minimalism
+# Dark Mode - Monochromatic Minimalism
 # Background: #121212 | Primary text: #E0E0E0 | Secondary text: #B0B0B0
 # Borders: #444444 | Subtle: #888888
 --------------------------------------------------------------*/
@@ -1017,9 +1016,15 @@ body.dark-mode #preloader {
 }
 
 /* Header / Nav */
-body.dark-mode #header {
-  background: #1a1a1a;
-  border-right-color: #444444;
+@media (max-width: 991px) {
+  body:not(.dark-mode) #header {
+    background: #faf8f4;
+  }
+
+  body.dark-mode #header {
+    background: #1a1a1a;
+    border-right-color: #444444;
+  }
 }
 
 body.dark-mode .nav-menu a,
